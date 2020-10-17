@@ -5,6 +5,9 @@ RUN apt-get update
 
 RUN apt-get install wget unzip -y
 
+RUN apt-get install python3-numpy -y
+RUN apt-get install python3-matplotlib -y
+
 # https://github.com/mohaseeb/raspberrypi3-opencv-docker/blob/master/opencv_4/4.1.2/download_build_install_opencv.sh
 COPY download_build_install_opencv.sh download_build_install_opencv.sh
 
