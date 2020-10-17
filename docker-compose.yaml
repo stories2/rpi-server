@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  mariadb:
+  rpi_jupyter:
     build: ./
     image: rpi-jupyter-stories2
     container_name: rpi-jupyter-stories2
