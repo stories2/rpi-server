@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:jessie
+FROM maxjiang/rpi-jupyter
 MAINTAINER stories2 
 
 EXPOSE 8888
