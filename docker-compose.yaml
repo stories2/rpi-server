@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  mariadb:
+    build: ./
+    image: rpi-jupyter-stories2
+    container_name: rpi-jupyter-stories2
+    restart: always
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/root/notebooks
+    environment:
+      - GRANT_SUDO=yes
+    user: root
