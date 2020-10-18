@@ -8,6 +8,7 @@ RUN apt-get install wget unzip -y
 RUN apt-get install python3-numpy -y
 RUN apt-get install python3-matplotlib -y
 RUN pip3 install numpy==1.8.2
+RUN pip3 install matplotlib==1.4.2
 RUN python3 -c "import numpy; print(numpy.__version__)"
 RUN python3 -c "import matplotlib; print(matplotlib.__version__)"
 
