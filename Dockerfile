@@ -20,7 +20,7 @@ RUN python3 -c "import matplotlib; print(matplotlib.__version__)"
 # RUN pip3 install numpy
 #RUN ./download_build_install_opencv.sh
 RUN pip3 install scikit-build==0.11.1
-RUN pip3 install opencv-python==4.4.0.44
+RUN pip3 install opencv-python==3.4.11.43
 RUN python3 -c "import cv2; print(cv2.__version__)"
 
 EXPOSE 8888
