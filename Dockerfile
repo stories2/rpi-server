@@ -24,6 +24,12 @@ RUN pip3 install Cython==0.29.21
 RUN pip3 install opencv-python==4.4.0.44
 RUN python3 -c "import cv2; print(cv2.__version__)"
 
+RUN pip3 install dlib
+RUN python3 -c "import dlib; print(dlib.__version__)"
+
+RUN pip3 install imutils
+RUN python3 -c "import imutils; print(imutils.__version__)"
+
 EXPOSE 8888
 
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token="]
