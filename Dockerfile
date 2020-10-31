@@ -24,10 +24,10 @@ RUN pip3 install Cython==0.29.21
 RUN pip3 install opencv-python==4.4.0.44
 RUN python3 -c "import cv2; print(cv2.__version__)"
 
-RUN pip3 install dlib
+RUN pip3 install dlib==19.21.0
 RUN python3 -c "import dlib; print(dlib.__version__)"
 
-RUN pip3 install imutils
+RUN pip3 install imutils==0.5.3
 RUN python3 -c "import imutils; print(imutils.__version__)"
 
 EXPOSE 8888
