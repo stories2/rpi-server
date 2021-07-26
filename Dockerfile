@@ -32,6 +32,8 @@ RUN python3 -c "import imutils; print(imutils.__version__)"
 
 RUN pip3 install pybind11==2.4.3
 
+RUN pip3 install certifi==2020.06.20
+
 RUN pip3 install scikit-image==0.18.0rc1
 
 RUN pip3 install firebase-admin==5.0.1
