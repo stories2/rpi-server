@@ -30,6 +30,8 @@ RUN python3 -c "import dlib; print(dlib.__version__)"
 RUN pip3 install imutils==0.5.3
 RUN python3 -c "import imutils; print(imutils.__version__)"
 
+RUN pip3 install pybind11==2.4.3
+
 RUN pip3 install scikit-image==0.18.0rc1
 
 RUN pip3 install firebase-admin==5.0.1
