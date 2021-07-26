@@ -30,6 +30,8 @@ RUN python3 -c "import dlib; print(dlib.__version__)"
 RUN pip3 install imutils==0.5.3
 RUN python3 -c "import imutils; print(imutils.__version__)"
 
+RUN pip3 install scikit-image==0.18.0
+
 EXPOSE 8888
 
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token="]
