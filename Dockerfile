@@ -32,6 +32,8 @@ RUN python3 -c "import imutils; print(imutils.__version__)"
 
 RUN pip3 install scikit-image==0.18.0rc1
 
+RUN pip3 install firebase-admin==5.0.1
+
 EXPOSE 8888
 
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token="]
