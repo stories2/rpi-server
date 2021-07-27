@@ -47,6 +47,10 @@ RUN pip3 install pillow==8.3.1
 
 RUN pip3 install scikit-image==0.17.2
 
+RUN apt-get install libssl-dev libffi-dev -y
+
+RUN pip3 install cffi==1.0.0
+
 RUN pip3 install firebase-admin==5.0.1
 
 EXPOSE 8888
