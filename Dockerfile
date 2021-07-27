@@ -34,7 +34,18 @@ RUN pip3 install pybind11==2.4.3
 
 RUN pip3 install certifi==2020.06.20
 
-RUN pip3 install scikit-image==0.18.0rc1
+RUN pip3 install cppy==1.1.0
+
+RUN apt-get install python3-pil python3-scipy python3-tk -y
+RUN apt-get install build-essential cython3 -y
+
+RUN apt-get install gfortran libopenblas-dev liblapack-dev
+
+RUN apt-get install libjpeg-dev libfreetype6 libfreetype6-dev zlib1g-dev -y
+
+RUN pip3 install pillow==8.3.1
+
+RUN pip3 install scikit-image==0.17.2
 
 RUN pip3 install firebase-admin==5.0.1
 
