@@ -55,4 +55,4 @@ RUN pip3 install firebase-admin==5.0.1
 
 EXPOSE 8888
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token="]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token=", "--NotebookApp.base_url=/jupy"]
