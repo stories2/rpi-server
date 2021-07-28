@@ -1,11 +1,17 @@
 version: '3.7'
 
+networks:
+  home-server_rasp_net:
+    external: true
+
 services:
   rpi_jupyter:
     build: ./
     image: rpi-jupyter-stories2
     container_name: rpi-jupyter-stories2
     restart: always
+    networks:
+      - home-server_rasp_net
     ports:
       - "8888:8888"
     volumes:
